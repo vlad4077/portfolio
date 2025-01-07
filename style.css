@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #12121C;
+    font-family: Sora;
+}
+.container{
+    width: 90%;
+    max-width: 1260px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90px;
+}
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoText{
+    font-weight: regular;
+    font-size: 27px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+.headerNav{
+    display: flex;
+}
+.navList{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.link{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #88888D;
+    text-decoration: none;
+}   
+.active{
+    color: #FFFFFF;
+}
+.headerButton{
+    background-color: #222233;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    color: #FFFFFF;
+    padding: 14px 24px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+
+
+
+
+.content1TitleBlock{
+    margin-top: 120px;
+}
+.content1Title{
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 86px;
+    color: #FFFFFF;
+}
+.titleSpan{
+    color: #88888D;
+}
+.titleBlockText{
+    font-weight: regular;
+    font-size: 24px;
+    line-height: 32px;
+    color: #88888D;
+    max-width: 830px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+.titleBlockButton{
+    background-color: #006ADA;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    padding: 14px 24px;
+    cursor: pointer;
+}
+
+
+/* Cards */
+.content1Cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+    flex-wrap: wrap;
+}
+.card{
+    width: 385px;
+    height: 205px;
+    background-color: #222233;
+    border-radius: 8px;
+}
+.cardImage{
+    padding: 15px;
+    background-color: #57EFB4;
+    border-radius: 8px;
+    margin: 20px;
+}
+.cardTitle{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-left: 20px;
+}
+.cardText{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #88888D;
+    margin-top: 16px;
+    margin-left: 20px;
+}
+.mainContanier2{
+    margin-top: 160px;
+}
+
+
+.workCard{
+    background-image: url(https://images.prom.ua/2913529835_w600_h600_2913529835.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    border-radius: 8px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+.workName{
+    padding: 20px;
+    background-color: #222233;
+    border-radius: 8px;
+    margin: 40px;
+
+}
+.workNameTitle{
+    font-style: 600;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+.workLink{
+    padding: 15px;
+    background-color:#222233;
+    border-radius: 8px;
+    margin: 40px;
+}
+.mainContainer3{
+    margin-top: 160px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+.content3TitleBlock{
+    max-width: 530px;
+}
+.content3Title{
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56px;
+    color: #ffffff;
+
+}
+.content3Text{
+    font-weight: 30;
+    font-size: 14px;
+    line-height: 24px;
+    color: #88888d;
+    margin-top: 16px;
+}
+.footer{
+    background-color: #222233;
+    height: 100%;
+
+}
+.footerNav{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footer .container .logoContainer{
+    margin-top: 120px;
+    margin-bottom: 32px;
+}
+.footerLink{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    width: 290px;
+    margin: 5px;
+}
+.footerLastBox{
+    margin-top: 50px;
+}
+.copi{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #88888d;
+}
+.footerIcon{
+    padding: 9px;
+    border-radius: 100%;
+    margin: 0 12px;
+}
+.footerIcon:hover{
+    background-color: #57EFB4;
+}
+@media(max-width:1024px){
+    .card:last-child{
+        margin-top: 35px;
+
+    }
+    .content3TitleBlock{
+        max-width: 40%;
+    }
+    .content3img{
+        width:50% ;
+    }
+}
+@media( max-width:768px){
+    .content1Cards{
+        justify-content: center;
+    }
+    .card{
+        margin-top: 35px;
+        width: 80%;
+    }
+    .mainContainer3{
+        flex-direction: column;
+    }
+    .content3img{
+        margin-top: 50px 0;
+    }
+}
+@media(max-width:425px){
+    .headerNav{
+        display: none;
+    }
+    .content1Title{
+        font-size: 40px;
+        line-height: 48px;
+    }
+    .titleBlockText{
+        font-size: 16px;
+        line-height: 48px;
+    }
+    .titleBlockButton{
+        width: 100%;
+        text-align: center;
+    }
+    .card{
+        width: 95%;
+    }
+    .workCard{
+        background-size:cover;
+        height: 350%;
+    }
+    .workName{
+        margin: 0;
+        padding: 10px 15px;
+        max-width:70%;
+        border-radius: 0 8px 0 8px ;
+    }
+    .workLink{
+        margin: 15px;
+    }
+}
+
